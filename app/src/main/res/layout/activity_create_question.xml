@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kabal.CreateQuestion">
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff1fc"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="sdfghj"
+            android:textAlignment="center"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/qanda_select_where_to_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/location_text"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Select where you want to post*" />
+
+        <Spinner
+            android:id="@+id/qanda_where_to_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/qanda_select_where_to_post"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp" />
+
+        <View
+            android:id="@+id/fakeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/qanda_where_to_post"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:text="Select State*" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="Select district*" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/select_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"></Spinner>
+
+            <Spinner
+                android:id="@+id/select_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"></Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/question"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="26dp"
+            android:text="Write your question*" />
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/all_border_and_grey_background"
+            android:ems="10"
+            android:hint="your text"
+            android:inputType="text|textMultiLine"
+            android:textColorLink="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/question"
+            android:layout_below="@+id/question"
+            android:layout_marginTop="10dp"
+            android:text="At where or whom are pointing at"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/to_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/all_border_grey"
+            android:drawableLeft="@drawable/icons8_email_20"
+            android:hint="Ef: Govt. / Person / People /  Place"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_point"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Hashtag"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/hashtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/all_border_grey"
+            android:drawableLeft="@drawable/icons8_hashtag_20"
+            android:ems="10"
+            android:hint="your text"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hashtag"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Place" />
+
+        <EditText
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/all_border_grey"
+            android:drawableLeft="@drawable/icons8_hashtag_20"
+            android:ems="10"
+            android:hint="your text"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB" />
+
+        <Button
+            android:id="@+id/post_qanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/place"
+            android:background="@drawable/pink_button"
+            android:text="Publish Question"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

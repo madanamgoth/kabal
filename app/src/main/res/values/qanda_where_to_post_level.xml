@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="level">
+        <item>-----------</item>
+        <item>District</item>
+        <item>State</item>
+        <item>Nation</item>
+    </string-array>
+</resources>
